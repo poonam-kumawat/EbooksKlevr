@@ -44,7 +44,6 @@ class _AppState extends State<App> {
             home: Scaffold(body: Text('data')),
           );
         }
-
         // Otherwise, show something whilst waiting for initialization to complete
         return const Text('loading', textDirection: TextDirection.ltr);
       },
