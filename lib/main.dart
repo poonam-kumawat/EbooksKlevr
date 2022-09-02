@@ -1,3 +1,5 @@
+import 'package:ebooksklevr/routes.dart';
+import 'package:ebooksklevr/themes.dart';
 import 'package:flutter/material.dart';
 
 // Import the firebase_core plugin
@@ -38,10 +40,10 @@ class _AppState extends State<App> {
 
         // Once complete, show your application
         if (snapshot.connectionState == ConnectionState.done) {
-          return const MaterialApp(
+          return MaterialApp(
             debugShowCheckedModeBanner: false,
-            title: 'FlutterFire',
-            home: Scaffold(body: Text('data')),
+            routes: appRoutes,
+            theme: appTheme,
           );
         }
         // Otherwise, show something whilst waiting for initialization to complete
